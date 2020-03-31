@@ -69,16 +69,16 @@ header #navigation{
     margin: 0;
     padding: 0;
 }
-header li a, footer li a{
+header li a, footer li a, .sort_years li a{
     color: black;
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 0.7px;
 }
-header li a:hover, footer li a:hover{
+header li a:hover, footer li a:hover, .sort_years li a:hover{
     border-bottom: 2px solid #F5AE47;
 }
-.main_block{
+#main_block{
     color: white;
     background-image: url("media/background.jpg");
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ header li a:hover, footer li a:hover{
     height: 91vh;
 
 }
-.main_block .container{
+#main_block .container{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -107,7 +107,7 @@ header li a:hover, footer li a:hover{
     color: #AB3833;
     background: white;
 }
-.main_block h2, #underheader h2{
+#main_block h2, #underheader h2, #underheader_events h2{
     color: #F5AE47;
     font-family: 'Pacifico', cursive;
     font-size: 80px;
@@ -115,18 +115,18 @@ header li a:hover, footer li a:hover{
     letter-spacing: 0.7px;
     margin: 0;
 }
-.main_block img{
+#main_block img{
     margin-top: 50px;
     margin-bottom: 20px;
 }
-.main_block .down{
+#main_block .down{
     margin-top: 100px;
     margin-bottom: 10px;
 }
-.info_block{
+#info_block {
     padding: 80px 0 50px 0;
 }
-.info_block .bar_title a{
+#info_block .bar_title a{
     margin: 0;
     font-family: "Pacifico", cursive;
     color: #F5AE47;
@@ -156,87 +156,98 @@ header li a:hover, footer li a:hover{
     align-items: center;
     margin-bottom: 30px;
 }
-.products{
+#products {
     background: #EEEEEE;
     padding: 50px 0;
 }
-.products .products_bar{
+#products .products_bar{
     margin-top: 50px;
 }
-.products hr{
+#products .products_bar .row{
+    align-items: stretch;
+}
+#products hr{
     margin-top: 20px;
     height: 2px;
     border: none;
     background: #009A75;
 }
-.products .product_bar_title{
+#products .product_bar_title{
     background: white;
 }
-.products .product_bar_title div{
+#products .product_bar_title div{
     padding: 0 25px 40px 25px;
 }
-.products .bar{
+#products .bar{
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
 }
-.products .bar .products_block_bar{
+#products .bar .products_block_bar{
     text-decoration: none;
     box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
 }
-.products .product_bar_title a:hover, .info_block .bar_title a:hover{
+#products .product_bar_title a:hover, #info_block .bar_title a:hover{
     color: #AB3833;
 }
-.products .products_bar img{
+#products .products_bar img{
     width: 100%;
 }
-.news{
+#news {
     padding: 50px 0;
 }
-.news .news_block{
+#news .news_block{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.news .news_bar{
-    padding-bottom: 20px;
+.news_bar{
+    height: 450px;
     margin-bottom: 30px;
     box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.news .news_bar img{
+.news_bar img{
     width: 100%;
 }
-.news .news_bar .date{
+.news_bar .date{
     padding: 10px 25px;
     background: #F5AE47;
     font-size: 14px;
     letter-spacing: 0.6px;
 }
-.news .news_bar span, .social_networks span, #contact_us .soc_icon span{
-    margin: 20px 0;
+.news_bar span, #social_networks span, #contact_us .soc_icon span{
+    margin: 25px 0;
     font-family: "Pacifico", cursive;
     font-weight: normal;
     text-align: center;
     line-height: 40px;
     font-size: 28px;
 }
-.social_networks{
+.news_bar span{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+#social_networks {
     background: #F5FAF9;
     padding: 50px 0;
 }
-.social_networks h2{
+#social_networks h2{
     margin-bottom: 30px;
 }
-.social_networks .soc_icon{
+#social_networks .soc_icon{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0 30px 30px 30px;
 }
-.social_networks img{
+#social_networks img{
     margin-right: 20px;
     width: 100%;
 }
@@ -298,7 +309,7 @@ footer .feedback img{
     margin-right: 10px;
 }
 
-#underheader{
+#underheader, #underheader_events{
     background-image: url("media/background_contacts.jpg");
     height: 350px;
     display: flex;
@@ -355,15 +366,68 @@ footer .feedback img{
     outline: none;
     cursor: pointer;
 }
+#underheader_events{
+    background-image: url("media/background_events.jpg");
+}
+#events_bar{
+    padding: 50px 0;
+}
+#events_bar .sort_years{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 40%;
+    padding: 0;
+    margin-bottom: 30px;
+}
+#events_bar .sort_years li a{
+    margin: 0 15px;
+    font-size: 22px;
+}
+#events_bar .events_grid{
+    padding: 20px 0;
+}
+.pagination{
+    margin: 30px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+.pagination li a{
+    padding: 15px 20px;
+    font-size: 18px;
+}
+.pagination .page-item a:active{
+    border-radius: 100%;
+    background: #009A75;
+    color: white;
+}
+@media(max-width: 1199px){
+    #products .product_bar_title{
+        height: 200px;
+    }
+    .news_bar{
+        height: 400px;
+    }
+}
 @media(max-width: 991px){
-    header li a{
+    header li a, footer li a{
         font-size: 14px;
+    }
+    #products .product_bar_title{
+        height: 220px;
+    }
+    .news_bar{
+        height: 330px;
+    }
+    .news_bar span{
+        font-size: 22px;
     }
     #contact_us h2{
         text-align: center;
-    }
-    footer li a{
-        font-size: 14px;
     }
 }
 @media(max-width: 767px){
@@ -394,6 +458,12 @@ footer .feedback img{
     h1{
         font-size: 60px;
     }
+    .news_bar{
+        height: auto;
+    }
+    .news_bar span{
+        font-size: 28px;
+    }
     footer ul{
         padding: 0;
     }
@@ -408,13 +478,13 @@ footer .feedback img{
     h2{
         font-size: 32px;
     }
-    .main_block .container{
+    #main_block .container{
         justify-content: center;
     }
-    .main_block .down{
+    #main_block .down{
         display: none;
     }
-    .main_block h2, #underheader h2{
+    #main_block h2, #underheader h2, #underheader_events h2{
         font-size: 40px;
     }
     .main_text a, .more_news, input[type=submit]{
@@ -431,5 +501,8 @@ footer .feedback img{
     #contact_us img{
         height: 30px;
         width: 30px;
+    }
+    #events_bar .sort_years li a{
+        font-size: 14px;
     }
 }
