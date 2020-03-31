@@ -45,7 +45,7 @@
                         <a href="#">МЕНЮ</a>
                     </div>
             </div>
-            <div class="row justify-content-center down">
+            <div class="row justify-content-center down" id="down">
                 <a href="#info_block"><img src="media/next.svg"></a>
             </div>
         </div>
@@ -262,6 +262,15 @@
 
 
         }
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type='text/javascript'>
+        $(function() {
+            $('a[href*=#]').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+            });
+        });
     </script>
 </body>
 </html>

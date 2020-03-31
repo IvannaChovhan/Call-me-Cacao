@@ -83,7 +83,7 @@ header li a:hover, footer li a:hover, .sort_years li a:hover{
     background-image: url("media/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 91vh;
+    height: 92vh;
 
 }
 #main_block .container{
@@ -118,6 +118,22 @@ header li a:hover, footer li a:hover, .sort_years li a:hover{
 #main_block img{
     margin-top: 50px;
     margin-bottom: 20px;
+    animation: sdb04 2s infinite;
+}
+@keyframes sdb04 {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(0, 10px);
+    }
+    40% {
+        transform: translate(0, 0);
+    }
+}
+
+#main_block .down:hover{
+    opacity: .5;
 }
 #main_block .down{
     margin-top: 100px;
