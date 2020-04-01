@@ -76,6 +76,7 @@ header li a, footer li a, .sort_years li a{
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 0.7px;
+    padding-bottom: 5px;
 }
 header li a:hover, footer li a:hover, .sort_years li a:hover{
     border-bottom: 2px solid #F5AE47;
@@ -370,7 +371,6 @@ footer .feedback img{
 }
 #contact_us .soc_icon{
     margin: 0;
-    justify-content: center;
 }
 #contact_us .map{
     padding-top: 30px;
@@ -473,6 +473,9 @@ footer .feedback img{
     }
     #contact_us h2{
         text-align: center;
+    }
+    #contact_us .soc_icon{
+        justify-content: center;
     }
 }
 @media(max-width: 767px){
