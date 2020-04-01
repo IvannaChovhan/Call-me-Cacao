@@ -83,7 +83,7 @@ header li a:hover, footer li a:hover, .sort_years li a:hover{
     background-image: url("media/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 92vh;
+    height: calc(100vh - 80px);
 
 }
 #main_block .container{
