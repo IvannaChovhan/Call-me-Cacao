@@ -11,41 +11,49 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="info_header">
-                <img src="media/logo_text.png" class="logo_header">
-                <span>
-                        Ми працюємо:
-                        <br>
-                        пн-нд 10:00 - 22:00
-                        <br>
-                        вул. Нижній Вал, 35
-                </span>
+            <div class="col-12 header">
+                <div class="info_header">
+                    <img src="media/logo_text.png" class="logo_header">
+                    <span>
+                            Ми працюємо:
+                            <br>
+                            пн-нд 10:00 - 22:00
+                            <br>
+                            вул. Нижній Вал, 35
+                        </span>
+                </div>
+                <img src="media/nav.svg" id="nav_icon">
+                <ul id="navigation">
+                    <li><a href="index.html">ГОЛОВНА</a></li>
+                    <li><a href="#">ПРО НАС</a></li>
+                    <li><a href="#">МЕНЮ</a></li>
+                    <li><a href="events.html">ПОДІЇ</a></li>
+                    <li><a href="contacts.html">КОНТАКТИ</a></li>
+                </ul>
             </div>
-            <img src="media/nav.svg" id="nav_icon">
-            <ul id="navigation">
-                <li><a href="index.html">ГОЛОВНА</a></li>
-                <li><a href="#">ПРО НАС</a></li>
-                <li><a href="#">МЕНЮ</a></li>
-                <li><a href="events.html">ПОДІЇ</a></li>
-                <li><a href="contacts.html">КОНТАКТИ</a></li>
-            </ul>
         </div>
     </div>
 </header>
 <section id="underheader_events">
     <div class="container">
-        <h2>Події</h2>
+        <div class="row">
+            <div class="col">
+                <h2>Події</h2>
+            </div>
+        </div>
     </div>
 </section>
 <section id="events_bar">
     <div class="container">
         <div class="row justify-content-md-center justify-content-around">
-            <ul class="sort_years">
-                <li><a href="#">За весь час</a></li>
-                <li><a href="#">2020</a></li>
-                <li><a href="#">2019</a></li>
-                <li><a href="#">2018</a></li>
-            </ul>
+            <div class="col">
+                <ul class="sort_years">
+                    <li><a href="#">За весь час</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                </ul>
+            </div>
         </div>
         <div class="events_grid">
             <div class="row">
@@ -118,15 +126,17 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <ul class="pagination">
-                <li class="arrow"><a class="page-link" href="#"><img src="media/next_left.svg"></a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                <li class="page-item"><a class="page-link" href="#">10</a></li>
-                <li class="arrow"><a class="page-link" href="#"><img src="media/next_right.svg"></a></li>
-            </ul>
+        <div class="row">
+            <div class="col pagination_block">
+                <ul class="pagination">
+                    <li class="arrow"><a class="page-link" href="#"><img src="media/next_left.svg"></a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                    <li class="arrow"><a class="page-link" href="#"><img src="media/next_right.svg"></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>

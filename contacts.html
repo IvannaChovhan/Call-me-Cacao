@@ -11,30 +11,36 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="info_header">
-                <img src="media/logo_text.png" class="logo_header">
-                <span>
-                        Ми працюємо:
-                        <br>
-                        пн-нд 10:00 - 22:00
-                        <br>
-                        вул. Нижній Вал, 35
-                </span>
+            <div class="col-12 header">
+                <div class="info_header">
+                    <img src="media/logo_text.png" class="logo_header">
+                    <span>
+                            Ми працюємо:
+                            <br>
+                            пн-нд 10:00 - 22:00
+                            <br>
+                            вул. Нижній Вал, 35
+                        </span>
+                </div>
+                <img src="media/nav.svg" id="nav_icon">
+                <ul id="navigation">
+                    <li><a href="index.html">ГОЛОВНА</a></li>
+                    <li><a href="#">ПРО НАС</a></li>
+                    <li><a href="#">МЕНЮ</a></li>
+                    <li><a href="events.html">ПОДІЇ</a></li>
+                    <li><a href="contacts.html">КОНТАКТИ</a></li>
+                </ul>
             </div>
-            <img src="media/nav.svg" id="nav_icon">
-            <ul id="navigation">
-                <li><a href="index.html">ГОЛОВНА</a></li>
-                <li><a href="#">ПРО НАС</a></li>
-                <li><a href="#">МЕНЮ</a></li>
-                <li><a href="events.html">ПОДІЇ</a></li>
-                <li><a href="contacts.html">КОНТАКТИ</a></li>
-            </ul>
         </div>
     </div>
 </header>
 <section id="underheader">
     <div class="container">
-        <h2>Контакти</h2>
+        <div clas="row">
+            <div class="col">
+                <h2>Контакти</h2>
+            </div>
+        </div>
     </div>
 </section>
 <section id="contact_us">
@@ -63,32 +69,34 @@
 </section>
 <section id="form_feedback">
     <div class="container">
-        <h2>ЗВОРОТНІЙ ЗВ'ЯЗОК</h2>
-        <div class="row justify-content-center">Якщо маєте скарги або пропозиції - обов'язково повідомте нас і ми з вами зв'яжемось</div>
-        <div class="form">
-            <div class="row">
-                <div class="col-md-6">
-                    <input type="text" id="name"  placeholder="Ваше Ім'я">
+        <div class="row">
+            <div class="col">
+                <h2>ЗВОРОТНІЙ ЗВ'ЯЗОК</h2>
+                <p>Якщо маєте скарги або пропозиції - обов'язково повідомте нас і ми з вами зв'яжемось</p>
+                <div class="form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" id="name"  placeholder="Ваше Ім'я">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="surname"  placeholder="Ваше Прізвище">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" id="phone"  placeholder="Номер телефону">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="mail"  placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <textarea id="subject" placeholder="Текст повідомлення"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Надіслати">
                 </div>
-                <div class="col-md-6">
-                    <input type="text" id="surname"  placeholder="Ваше Прізвище">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <input type="text" id="phone"  placeholder="Номер телефону">
-                </div>
-                <div class="col-md-6">
-                    <input type="text" id="mail"  placeholder="E-mail">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <textarea id="subject" placeholder="Текст повідомлення"></textarea>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <input type="submit" value="Надіслати">
             </div>
         </div>
     </div>

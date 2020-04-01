@@ -39,8 +39,10 @@ h4{
     letter-spacing: 0.6px;
 }
 
-header .row{
+header .header{
     height: 80px;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -92,6 +94,25 @@ header li a:hover, footer li a:hover, .sort_years li a:hover{
     justify-content: flex-end;
     height: 100%;
 }
+#main_block .row{
+    height: 60%;
+}
+#main_block .text_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#main_block .main_text h1{
+    text-align: center;
+}
+#main_block .main_text h2, #main_block .main_text a{
+    text-align: right;
+}
+#main_block .main_text .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 .main_text a, .more_news, input[type=submit]{
     margin: 20px 0;
     text-decoration: none;
@@ -114,6 +135,11 @@ header li a:hover, footer li a:hover, .sort_years li a:hover{
     font-weight: normal;
     letter-spacing: 0.7px;
     margin: 0;
+}
+#main_block #down{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 #main_block img{
     margin-top: 50px;
@@ -257,7 +283,7 @@ header li a:hover, footer li a:hover, .sort_years li a:hover{
 #social_networks h2{
     margin-bottom: 30px;
 }
-#social_networks .soc_icon{
+#social_networks .soc_icon, #contact_us .soc_icon{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -343,9 +369,8 @@ footer .feedback img{
     text-align: left;
 }
 #contact_us .soc_icon{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin: 0;
+    justify-content: center;
 }
 #contact_us .map{
     padding-top: 30px;
@@ -360,7 +385,7 @@ footer .feedback img{
 }
 #form_feedback input[type=text], textarea {
     width: 100%;
-    padding: 12px 0;
+    padding: 12px 5px;
     margin: 20px 0;
     border: none;
     border-bottom: 1px solid black;
@@ -392,8 +417,7 @@ footer .feedback img{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    min-width: 40%;
+    justify-content: center;
     padding: 0;
     margin-bottom: 30px;
 }
@@ -420,6 +444,11 @@ footer .feedback img{
     border-radius: 100%;
     background: #009A75;
     color: white;
+}
+.pagination_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 @media(max-width: 1199px){
     #products .product_bar_title{
@@ -494,7 +523,10 @@ footer .feedback img{
     h2{
         font-size: 32px;
     }
-    #main_block .container{
+    #main_block .main_text h2{
+        text-align: center;
+    }
+    #main_block .main_text .btn{
         justify-content: center;
     }
     #main_block .down{
@@ -508,6 +540,9 @@ footer .feedback img{
         font-size: 24px;
         padding: 15px 50px;
     }
+    #main_block #down{
+        display: none;
+    }
     header .info_header span{
         display: none;
     }
@@ -518,7 +553,11 @@ footer .feedback img{
         height: 30px;
         width: 30px;
     }
+    #events_bar .sort_years{
+        justify-content: space-around;
+    }
     #events_bar .sort_years li a{
         font-size: 14px;
+        margin: 0 10px;
     }
 }
