@@ -76,7 +76,7 @@ header li a, footer li a, .sort_years li a{
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 0.7px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 header li a:hover, footer li a:hover, .sort_years li a:hover{
     border-bottom: 2px solid #F5AE47;
